@@ -46,7 +46,7 @@ Click "send" button. Notice the UI is toggled each time data is received.
 
 ## Without UI
 
-Add a break point in `_Bouh_Controller.onData()`. Instantiate the class in a worker process:
+Place a break point in `_Bouh_Controller.onData()`. Instantiate the class in a worker process:
 
 ```4d
 #DECLARE($params : Object)

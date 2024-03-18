@@ -19,21 +19,21 @@ Function start() : cs:C1710.BouhForm
 	
 	Form:C1466.Bouh.start()
 	
-	return This:C1470
+	return Form:C1466
 	
 Function enable($objectName : Text)
 	
 	OBJECT SET ENTERABLE:C238(*; $objectName; True:C214)
 	OBJECT SET RGB COLORS:C628(*; $objectName; Foreground color:K23:1; Background color:K23:2)
 	
-	return This:C1470
+	return Form:C1466
 	
 Function disable($objectName : Text)
 	
 	OBJECT SET ENTERABLE:C238(*; $objectName; False:C215)
 	OBJECT SET RGB COLORS:C628(*; $objectName; Foreground color:K23:1; Background color none:K23:10)
 	
-	return This:C1470
+	return Form:C1466
 	
 Function onUnload()
 	
@@ -43,4 +43,4 @@ Function send($value : Text) : cs:C1710.BouhForm
 	
 	Form:C1466.Bouh.send($value)
 	
-	return This:C1470
+	return Form:C1466

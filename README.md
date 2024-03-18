@@ -18,9 +18,9 @@ As the communication is asynchronous, you need to
 1. Run in a worker process or a form dialog
 1. Implement callback functions
 
-In case of a form dialog, you may update the UI during the `.onData()` callback so that the user can post the next message.
+In case of a form dialog, you may implement `.onData()` to allow the user to post the next message.
 
-In case of a worker process with no UI, you may automatically post the next message.
+In case of a worker process with no UI, you may implement `.onData()` to automatically post the next message.
 
 # Example
 

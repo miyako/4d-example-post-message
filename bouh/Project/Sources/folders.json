@@ -1,0 +1,10 @@
+{
+	"Prototypes": {
+		"classes": [
+			"_CLI",
+			"_CLI_Controller",
+			"_Form"
+		]
+	},
+	"trash": {}
+}

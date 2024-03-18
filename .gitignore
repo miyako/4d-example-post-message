@@ -9,3 +9,6 @@ exe/Bouh/x64/Release/main.obj
 exe/Bouh/x64/Release/vc143.pdb
 exe/Bouh/x64/Release/Bouh.vcxproj.FileListAbsolute.txt
 exe/Bouh/Bouh.vcxproj.user
+bouh/userPreferences.*
+bouh/Data/*
+bouh/Project/DerivedData/*

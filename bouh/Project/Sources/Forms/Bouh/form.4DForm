@@ -1,0 +1,96 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "fixed",
+	"windowMinWidth": 622,
+	"windowMinHeight": 200,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"windowTitle": "",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"send": {
+					"type": "button",
+					"text": "send",
+					"top": 142,
+					"left": 233,
+					"width": 174,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/send.4dm",
+					"focusable": false
+				},
+				"stdIn": {
+					"type": "input",
+					"left": 109,
+					"top": 23,
+					"width": 157,
+					"height": 17,
+					"dataSource": "Form:C1466.stdIn"
+				},
+				"stdOut": {
+					"type": "input",
+					"left": 109,
+					"top": 60,
+					"width": 157,
+					"height": 17,
+					"dataSource": "Form:C1466.stdOut"
+				},
+				"Text": {
+					"type": "text",
+					"text": "stdIn",
+					"top": 24,
+					"left": 43,
+					"width": 46,
+					"height": 16
+				},
+				"Text1": {
+					"type": "text",
+					"text": "stdOut",
+					"top": 60,
+					"left": 43,
+					"width": 46,
+					"height": 16
+				},
+				"close": {
+					"type": "button",
+					"text": "close",
+					"top": 142,
+					"left": 422,
+					"width": 174,
+					"height": 27,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"action": "accept"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"geometryStamp": 742,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"width": 622,
+	"height": 200
+}

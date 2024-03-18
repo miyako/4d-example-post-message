@@ -42,7 +42,7 @@ Else
 End if
 ```
 
-Click "send" button. Notice the UI toggles each time data is received.
+Click "send" button. Notice the UI is toggled each time data is received.
 
 ## Without UI
 

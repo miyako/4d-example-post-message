@@ -5,9 +5,11 @@ Related discussion: https://discuss.4d.com/t/systemworker-full-duplex-process-pr
 
 # TL; DR
 
-* You need to postMessage() with a `Line Feed`
-* You should not use `.closeInput()` as it will close the communication with the console application
-* You should use a callback method (`.onData()`) to listen
+* You need to postMessage() with a `Line Feed` to send each message
+* You need to use the `.onData()`callback method to process each message
+* You can't use `.closeInput()` as it will close the communication with the console application
+* You canIt use `.onResponse()` as it is only sent once, when the CLI is about to exit
+
 
 # Basics
 

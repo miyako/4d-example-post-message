@@ -24,27 +24,6 @@ In case of a worker process with no UI, you may automatically post the next mess
 
 # Example
 
-## No UI
-
-Add a break point in `_Bouh_Controller.onData()`. Instantiate the class in a worker process:
-
-```4d
-#DECLARE($params : Object)
-
-If (Count parameters=0)
-	
-	CALL WORKER(1; Current method name; {})
-	
-Else 
-	
-	$bouh:=cs.Bouh.new(cs._Bouh_Controller)
-	$bouh.start().sendLines(["Hello"; "World"])
-	
-End if 
-```
-
-Notice the callback function is invoked twice.
-
 ## With UI
 
 Run the form in a worker process:
@@ -64,3 +43,24 @@ End if
 ```
 
 Click "send" button. Notice the UI toggles each time data is received.
+
+## Without UI
+
+Add a break point in `_Bouh_Controller.onData()`. Instantiate the class in a worker process:
+
+```4d
+#DECLARE($params : Object)
+
+If (Count parameters=0)
+	
+	CALL WORKER(1; Current method name; {})
+	
+Else 
+	
+	$bouh:=cs.Bouh.new(cs._Bouh_Controller)
+	$bouh.start().sendLines(["Hello"; "World"])
+	
+End if 
+```
+
+Notice the callback function is invoked twice.

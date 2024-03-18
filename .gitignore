@@ -1,0 +1,11 @@
+exe/Bouh/.vs/*
+exe/Bouh/x64/Release/Bouh.exe.recipe
+exe/Bouh/x64/Release/Bouh.iobj
+exe/Bouh/x64/Release/Bouh.ipdb
+exe/Bouh/x64/Release/Bouh.log
+exe/Bouh/x64/Release/Bouh.pdb
+exe/Bouh/x64/Release/Bouh.tlog/*
+exe/Bouh/x64/Release/main.obj
+exe/Bouh/x64/Release/vc143.pdb
+exe/Bouh/x64/Release/Bouh.vcxproj.FileListAbsolute.txt
+exe/Bouh/Bouh.vcxproj.user
